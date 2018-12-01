@@ -1,0 +1,612 @@
+/*
+Theme Name: Website for Abstraks
+Theme URI: http://abstraks.com
+Description: A custom Wordpress website for Abstraks
+Author: 100 Beans
+Author URI: Abstraks
+Version: 2.0
+Tags: Clean, light, responsive, two-column
+
+License: Abstraks LLC. &copy; All Rights Reserved
+License URI: http://www.abstraks.com
+
+This theme is the latest Abstraks website
+*/
+
+
+/*Mobile First*/
+/* Page Styles
+================================ */
+
+
+body {
+	color:#424242;
+	font-family: 'Varela Round', sans-serif;
+	background-color: #fff;
+	line-height: 1.55;
+}
+
+
+/* Layout Element Colors
+================================ */
+
+
+.main-footer	{ 
+	background-color: #333;
+	color: #fff;
+}
+
+.mainHeader {
+	border-bottom:2px solid #009900;
+	padding-bottom: 20px;
+}
+
+.postContent {
+	padding-bottom: 20px;
+	background-color: #fff;
+	box-shadow: 0 0.15em .5em #D0D0D0;
+}
+ 
+.main-banner,
+.secondary-banner	{ 
+	background-color: #fff; 
+}
+
+.mainBackground {
+	background-color:#f2f2f2;
+}
+
+.sideBar {
+	background-color: #f2f2f2;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.widget_wysija_cont .allmsgs li {
+    list-style-type: none;
+    color: #009900;
+    font-weight: 500;
+    font-size: large;
+    line-height: 1.5;
+}
+
+.widget_wysija_cont .updated, .widget_wysija_cont .login .message {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.widget_wysija_cont p label {
+    display: block;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+
+/* Links
+================================ */
+	
+.main-nav a,
+div.postContent h2 a,
+div.navigation div.alignleft a,
+div.navigation div.alignright a,
+a.post-link,
+div.postContent.col div.excerpt p a.post-link,
+div.navigation div.alignright a,
+.main-footer a,
+a,
+.slideHeader label,
+a h1.slideTitle {
+	transition: .3s ease-out;
+}
+	 
+.main-nav a {
+	display: inline;
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+
+.main-nav a:hover {
+	color: #009900;
+	text-decoration:underline;
+}
+
+.main-nav a:active {
+	color: #090;
+}
+
+.postContent h2 {
+	padding-top:25px;
+}
+
+.postContent h2 a {
+	text-decoration:underline;
+}
+
+.postContent.col .excerpt p a.post-link,
+.navigation .alignleft a,
+.navigation .alignright a,
+a.post-link {	
+  	color: #fff;
+  	padding: 10px;
+  	border-radius: 6px;
+}
+
+.primary-content.col .navigation {
+	border-top-color: #333;
+	border-top-width: thin;
+	border-top-style: solid;
+	padding-top: 30px;
+}
+
+.postContent.col .excerpt p a.post-link,
+.navigation .alignright a,
+a.post-link {
+	background-color: #090;
+}
+
+.navigation .alignleft a {
+	background-color:darkslategray;
+}
+
+.main-footer a {
+	display: inline;
+	color: #090;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px 15px;
+}
+
+.main-footer a:hover {
+	color: #fff;
+	}
+	
+a:active,
+a:hover {
+	outline: 0 none;
+	text-decoration: none;
+	color:#08401C;
+}
+
+a {
+	text-decoration: none;
+	color: #009900;
+}	
+
+.posts-navigation {
+	text-align: center;
+	font-size: 1.500em;
+}
+
+.navigation {
+	padding:15px 0;
+	height:50px;
+}
+
+
+/* Column Layout
+================================ */
+
+.postContent {
+	margin:10px 0;
+}
+
+.social ul { 
+	display: inline-block;
+}
+
+.excerpt {
+	margin-top: 0%;
+}
+
+.excerpt p {
+	margin: 25px 0;
+}
+
+
+.main-footer {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: .75em
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+
+/* Imagery & Videos
+================================ */
+
+img.wp-image.size-medium,
+.featured-image img {
+	height: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+a.navbar-brand img {
+	width: 50%;
+}
+
+.social img { 
+	width: 20%;
+	margin-left: 5px;
+}
+
+.postContent .excerpt a img.wp-post-image {
+		width: 100%;
+  		height: inherit;
+}
+
+i.fa.fa-calendar.fa-lg,
+i.fa.fa-envelope.fa-2x {
+	float:left;
+	color:#009900;
+	margin-right: 10px;
+}
+
+i.fa.fa-envelope.fa-2x {
+	margin-top: 20px;
+}
+
+svg {
+	width:20%;
+	float:left;
+	padding:0 10px;
+}
+
+.facebookBg a svg path,
+.instagramBg a svg path,
+.tumblrBg a svg path,
+.twitterBg a svg path {
+	fill:#009900; /*Regular Green*/
+	transition: .3s ease-out;
+}
+
+.facebookBg a svg path:hover,
+.instagramBg a svg path:hover,
+.tumblrBg a svg path:hover,
+.twitterBg a svg path:hover {
+	fill:#08401C; /*Dark Green*/
+}
+
+form#searchform.searchform div::before {
+	content:url(assets/search.png);
+	position: relative;
+    top: 10px;
+	right: 5px;
+}
+
+
+
+
+/* Comments & Buttons
+================================ */
+
+textarea {
+   	overflow: auto;
+	width: 100%;
+}
+
+button, 
+html input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+    cursor: pointer;
+	color:#ffffff;
+	background: #090;
+	border-radius: 6px;
+	padding:8px;
+	border:none;
+	transition: .3s ease-out;
+}
+
+input[type="button"]:hover, 
+input[type="submit"]:hover,
+a.post-link:hover,
+div.navigation div.alignright a:hover {
+	color:#ffffff;
+	background:#08401C;
+}
+
+div.navigation div.alignleft a:hover {
+	background-color:dimgray;
+}
+
+button, 
+input, 
+optgroup, 
+select, 
+textarea {
+    color: ##333333;
+    font: inherit;
+    margin: 0;
+	border-radius: 6px;
+	border-color:#9D9D9D;
+	border-bottom-width: thin;
+	border-top-width: thin;
+	border-width: thin;
+}
+
+.screen-reader-text {
+	display: none;
+}
+
+div.navigation div.alignleft {
+	float:left;
+}
+
+div.navigation div.alignright {
+	float:right;
+}
+
+
+/* Slider
+	================================ */
+	
+./* Makes images fully responsive */
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  height: auto;
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img {
+  width: 100%;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* ------------------- Carousel Styling ------------------- */
+
+.carousel-inner {
+  border-radius: 15px;
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 0 20px 10px 20px;
+  color: #fff;
+  text-align: left;
+}
+
+.carousel-caption h2 {
+	background-color: rgba(0,0,0,.5);
+    text-align: center;
+	font-size: large;
+}
+
+
+.carousel-indicators {
+  display: none;
+}
+
+.carousel-control {
+	color: #009900;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-inner .item img {
+	width:100%;
+}
+
+i.fa.fa-arrow-circle-left.fa-2x,
+i.fa.fa-arrow-circle-right.fa-2x {
+    margin: 70% 0;
+}
+
+
+
+/* Errors
+================================ */
+
+.formError .formErrorContent {
+    background: none repeat scroll 0 0 red;
+    border: 1px solid red;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 11px;
+    padding: 15px;
+    position: relative;
+    width: 155px;
+    z-index: 5001;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+
+/* Infinite Scroll
+================================ */
+
+/* Hides navigation links and site footer when infinite scroll is active */
+.infinite-scroll #navigation,
+.infinite-scroll.neverending #footer {
+    display: none;
+}
+/* Shows the footer again in case all posts have been loaded */
+.infinity-end.neverending #footer {
+    display: block;
+}
+
+
+
+/* Media Queries
+================================ */
+
+/*Tablet*/
+@media (min-width: 767px) {
+
+	.main-wrapper,
+	.content-row,
+	.col {
+		height: 100%;
+	}
+	
+	.mainBackground {
+		background-color:white;
+	}
+	
+	.postContent	{
+		border-bottom:2px solid #f2f2f2;
+		padding-bottom: 20px;
+		box-shadow:none;
+	}
+	
+	.postContent h2 {
+		padding-top:0;
+	}
+	
+	.navigation {
+		margin-bottom: 15px;
+	}
+	
+	/* Header and Banner
+	================================ */
+	
+	.main-header {
+		margin-left: 10px;
+		margin-right: 5%;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index: 100;
+		height:13%;
+	}
+	
+	.search {
+		float: left;
+	}
+	
+	a.navbar-brand {
+		width:205px;
+	}
+	
+	.search {
+	padding-top: 2%;
+	}
+	
+	.main-nav {
+		padding: 35px 5px 5px 5px;
+		/*float: right;*/
+	}
+	
+	
+	.main-footer li
+	 {
+		display: inline;
+	}
+	
+	.main-banner,
+	.secondary-banner {
+		text-align: center;
+		padding: 35px 15px;
+	}
+	
+
+	/* Imagery & Videos
+	================================ */
+
+	.feat-img {
+		width: 50%;
+		float: left;
+		margin-right: 25px;
+	}
+
+	a.navbar-brand img {
+		width: 94%;
+	}
+	
+	/* Slider
+	================================ */
+	
+	.section-white {
+     padding: 0 0 1.5em 0;
+  }
+  
+  .carousel-caption {
+  	background-color: rgba(0,0,0,.5);
+	padding: 0 0 10px 25px;
+	}
+	
+	.carousel-caption h2 {
+		background-color: transparent;
+    	text-align: left;
+		font-size:30px;
+	}
+	
+	.carousel-indicators {
+		display: inherit;
+  		position: absolute;
+  		bottom: 0;
+  		right: 0;
+		left: 0;
+		width: 100%;
+		z-index: 15;
+		margin: 0;
+		padding: 0 25px 25px 0;
+		text-align: right;
+	}
+
+/*Desktop*/
+@media (min-width: 991px) {
+	
+	/* Nav/Header
+	================================ */
+	
+	a.navbar-brand {
+		width: 0;
+		margin-right: 25%;
+	}
+	
+	a.navbar-brand img {
+		width: 200px;
+	}
+	
+	
+	/* Slider
+	================================ */
+	
+	.container {
+    max-width: 930px;
+  	}
+
+  	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+		width: 60%;
+		margin: 0 auto;
+}
+	
+	
+	/* Post Excert
+	================================ */
+	.excerpt {
+		margin-bottom: 40px;
+	}
+
+}
